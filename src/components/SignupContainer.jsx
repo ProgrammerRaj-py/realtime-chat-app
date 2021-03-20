@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import axios from 'axios'
 import uuid from 'react-uuid'
+import { socket } from '../App'
 import { Link, useHistory } from 'react-router-dom'
 import '../scss/Signup&Login.scss'
 
@@ -20,13 +20,15 @@ export default function SignupContainer() {
             password: password.current.value,
             active: true
         }
-        await axios.post("http://localhost:3000/users", newUser)
-        .then(response => {
-            history.push("/dashboard")
-        })
-        .catch(error=>{
-            console.log("user creation error", error)
-        })
+        socket.send(
+            JSON.stringify({
+                type: 'create',
+                path: 'users',
+                data: newUser
+            })
+        )
+        history.push("/dashboard")
+
     }
     return (
         <section className="signupContainer">

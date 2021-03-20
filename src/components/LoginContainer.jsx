@@ -1,28 +1,22 @@
 import axios from 'axios';
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { setCurrentUser } from '../redux/actions'
+
+import { socket } from '../App'
+
 import '../scss/Signup&Login.scss'
 
-export default function LoginContainer() {
+const LoginContainer = () => {
     const email = useRef(); const password = useRef();
     const history = useHistory()
+    const dispatch = useDispatch()
+    // const allUsers = useSelector(state => state.Users)
 
     const UserLoginHandeler = async e =>{
         e.preventDefault()
-        let userLogin
-        await axios.get(`http://localhost:3000/users?email=${email.current.value}&password=${password.current.value}`)
-        .then(response => {
-            userLogin = response.data
-            if (userLogin.length > 0){
-                userLogin = userLogin[0]
-                history.push("/dashboard")
-            }
-            else{
-                alert("No user found :(")
-            }
-        })
-        .catch(e=> console.log(e))
-    } 
+    }
     return (
         <section className="loginContainer">
             <h1 className="title">Realtime Chat App</h1>
@@ -45,3 +39,5 @@ export default function LoginContainer() {
         </section>
     )
 }
+
+export default LoginContainer;
