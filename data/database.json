@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "fb43c35-faf-c12c-37c7-b86164316ade",
+      "name": "Raj Mazumder",
+      "email": "rajmazumder182@gmail.com",
+      "password": "rajanup@123",
+      "active": false
+    },
+    {
+      "id": "8153d78-bfe7-c824-0ae7-d1118fc221f",
+      "name": "Anup Mazumder",
+      "email": "anup@gmail.com",
+      "password": "anup123",
+      "active": true
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "user_sent": "hello-omg",
+      "user_received": "opd-rahul",
+      "message": "Hi Rahul.",
+      "sentat": "20:30"
+    },
+    {
+      "id": 2,
+      "user_sent": "opd-rahul",
+      "user_received": "hello-omg",
+      "message": "Hi omg",
+      "sentat": "20:31"
+    }
+  ]
+}
