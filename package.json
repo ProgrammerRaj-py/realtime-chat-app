@@ -19,12 +19,12 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run start:dev & npm run socketdatabase",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "socketdatabase": "json-socket-server data/database.json",
-    "start:dev": "npm start & npm run socketdatabase"
+    "start:dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
