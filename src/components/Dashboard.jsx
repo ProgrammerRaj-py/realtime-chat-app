@@ -1,56 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import { deleteCurrentUser } from '../redux/actions'
+import { socket } from '../App'
 import '../scss/Dashboard.scss'
 
 import img from '../images/images.jpg'
 import SingleUser from './SingleUser'
 
-// let socket = new WebSocket("ws://localhost:8080")
-// socket.onopen = e =>{
-//     socket.send(JSON.stringify({type: 'read', path: 'users'}))
-// }
-
-
 export default function Dashboard() {
-    const userid = localStorage.realtime_chat_app
-    let history = useHistory()
-    // if(!userid){history.push("/")}
-    const [user, setUser] = useState({})
-    const [allUser, setAllUser] = useState([])
-    // socket.onmessage = m =>{
-    //     const users = JSON.parse(m.data)
-    //     setAllUser(users.data)
-    //     // console.log(users.data)
-    // }
-
-    const LogoutHandel = async() =>{
-        // setUser({...user, active: false})
-        // socket.send(JSON.stringify({
-        //     type: 'update',
-        //     path: 'users',
-        //     id: userid,
-        //     data: user
-        // }))
-        await axios.patch(`http://localhost:3000/users/${userid}`, {"active": false})
-        .then(e=>{
-            localStorage.setItem("realtime_chat_app", "")
-            history.push("/")
-        })
+    const allUsers = useSelector(state=> state.Users)
+    let history = useHistory(); const dispatch = useDispatch()
+    const logoutHandeler = () =>{
+        socket.send(JSON.stringify({
+            type: 'update',
+            path: 'users',
+            id: allUsers.currentuser.id,
+            data: {...allUsers.currentuser, active: false}
+        }))
+        dispatch(deleteCurrentUser())
+        history.push("/")
     }
-    useEffect(()=>{
-        async function getdata(){
-            await axios.get("http://localhost:3000/users").then(e=> setAllUser(e.data))
-            await axios.get(`http://localhost:3000/users?id=${userid}`)
-            .then(response => {
-                setUser(response.data[0])
-            })
-            .catch(error => {
-                console.log(error.message)
-            })
-        }
-        getdata()
-    },[])
+    if (typeof allUsers.currentuser.id === 'undefined'){
+        history.push("/")
+        return (<></>)
+    }
     return (
         <section className="Dashboard">
             <div className="profile">
@@ -60,23 +34,23 @@ export default function Dashboard() {
                     </div>
                     <div className="details">
                         {
-                            (typeof user !== 'undefined') ? <>
-                            <h1>{user.name} <i className="fas fa-circle"></i></h1>
-                            <p>{user.active ? "Active Now" : "Inactive now"}</p> </>: "Loading"
+                            (typeof allUsers !== 'undefined') ? <>
+                            <h1>{allUsers.currentuser.name} <i className="fas fa-circle"></i></h1>
+                            <p>{allUsers.currentuser.active ? "Active Now" : "Inactive now"}</p> </>: "Loading"
                         }
                     </div>
                 </div>
                 <div className="logout">
-                    <input type="button" value="Logout"  onClick={LogoutHandel}/>
+                    <input type="button" value="Logout" onClick={logoutHandeler} />
                 </div>
             </div>
             <div className="users">
                 <h1>Chats</h1>
                 <div className="allUsers">
                     {
-                        allUser.map((value, i) => <>
+                        allUsers.allusers.map((value, i) => <>
                             {
-                                value.id !== userid ? <SingleUser data={value} key={i}/> : ''
+                                value.id !== allUsers.currentuser.id ? <SingleUser data={value} key={i}/> : ''
                             }
                         </>)
                     }

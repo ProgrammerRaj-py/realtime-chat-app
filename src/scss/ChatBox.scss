@@ -35,7 +35,7 @@
 
         .chats{
             width: 100%;
-            max-height: 600px;
+            max-height: 585px;
             overflow-y: scroll;
             display: flex;
             flex-direction: column;
@@ -46,7 +46,7 @@
                 margin-bottom: 1rem;
 
                 .msgContainer{
-                    background: #d6d6d6;
+                    background: #97f07c;
                     width: fit-content;
                     max-width: 50%;
                     border-radius: 0 20px 20px 20px;
@@ -86,10 +86,11 @@
     form{
         flex: 0.08;
         width: 100%;
+        display: flex;
         align-items: center;
         justify-content: space-between;
 
-        input{
+        textarea{
             width: 85%;
             height: 100%;
             background: transparent;
@@ -99,8 +100,9 @@
             border-radius: 5px 0 0 5px;
             transition: border-color 0.4s ease-in-out;
             font-size: 1rem;
+            resize: none;
         }
-        input:focus{
+        textarea:focus{
             border-color: #008000;
         }
         button{

@@ -2,11 +2,14 @@ import React, { useRef } from 'react'
 import uuid from 'react-uuid'
 import { socket } from '../App'
 import { Link, useHistory } from 'react-router-dom'
+import { createNewUser, setCurrentUser } from '../redux/actions'
+import { useDispatch } from 'react-redux'
 import '../scss/Signup&Login.scss'
 
 export default function SignupContainer() {
     const fname = useRef(); const lname = useRef(); const email = useRef(); const password = useRef()
     const history = useHistory()
+    const dispatch = useDispatch()
 
     const UserCreateHandeler = async e => {
         e.preventDefault()
@@ -27,8 +30,9 @@ export default function SignupContainer() {
                 data: newUser
             })
         )
+        dispatch(createNewUser(newUser))
+        dispatch(setCurrentUser(newUser))
         history.push("/dashboard")
-
     }
     return (
         <section className="signupContainer">

@@ -1,9 +1,7 @@
-import axios from 'axios';
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { setCurrentUser } from '../redux/actions'
-
 import { socket } from '../App'
 
 import '../scss/Signup&Login.scss'
@@ -12,10 +10,24 @@ const LoginContainer = () => {
     const email = useRef(); const password = useRef();
     const history = useHistory()
     const dispatch = useDispatch()
-    // const allUsers = useSelector(state => state.Users)
+    const allUsers = useSelector(state => state.Users)
 
     const UserLoginHandeler = async e =>{
         e.preventDefault()
+        const currUser = allUsers.allusers.find(user => user.email === email.current.value && user.password === password.current.value)
+        if(typeof currUser !== 'undefined'){
+            socket.send(JSON.stringify({
+                type: 'update',
+                path: 'users',
+                id: currUser.id,
+                data: {...currUser, active: true}
+            }))
+            dispatch(setCurrentUser({...currUser, active: true}))
+            history.push("/dashboard")
+        }else{
+            alert("Invalid input :( or Create an account")
+        }
+
     }
     return (
         <section className="loginContainer">

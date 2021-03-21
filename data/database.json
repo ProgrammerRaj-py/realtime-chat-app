@@ -1,45 +1,8 @@
 {
-  "users": [
-    {
-      "id": "fb43c35-faf-c12c-37c7-b86164316ade",
-      "name": "Raj Mazumder",
-      "email": "raj@gmail.com",
-      "password": "raj123",
-      "active": true
-    },
-    {
-      "id": "8153d78-bfe7-c824-0ae7-d1118fc221f",
-      "name": "Anup Mazumder",
-      "email": "anup@gmail.com",
-      "password": "anup123",
-      "active": false
-    },
-    {
-      "id": "41dc487-7b2d-f-f617-f166ef33c",
-      "name": "rupa rupa",
-      "email": "rupa@gmail.com",
-      "password": "rupa123",
-      "active": true
-    },
-    {
-      "id": "ad4020-e47e-c51c-05f-fcfe64e516a0",
-      "name": "kalu kalu",
-      "email": "kalu@gmail.com",
-      "password": "kalu123",
-      "active": true
-    }
-  ],
+  "users": [],
   "messages": [
     {
       "id": "1"
-    },
-    {
-      "user_sent": "hello-omg",
-      "user_received": "opd-rahul",
-      "message": "Hi Rahul.",
-      "sentat": "20:30",
-      "id": "CY69a4Q"
     }
-  ],
-  "posts": []
+  ]
 }
