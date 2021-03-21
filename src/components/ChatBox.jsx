@@ -38,6 +38,7 @@ export default function ChatBox(){
     const createMessaage = e =>{
         e.preventDefault()
         let msg = {
+            id: allMessages.allChats.length + 1,
             user_sent: allUsers.currentuser.id,
             user_received: allMessages.chatroomuser.id,
             content: textBox.current.value,

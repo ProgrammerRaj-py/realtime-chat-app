@@ -1,8 +1,50 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "name": "Raj Mazumder",
+      "email": "raj@gmail.com",
+      "password": "raj123",
+      "active": false,
+      "lastmessage": [
+        {
+          "touser": "243368-7827-b455-83d0-ca5d25ec845",
+          "content": "Hi anup\nHow are you?"
+        }
+      ]
+    },
+    {
+      "id": "243368-7827-b455-83d0-ca5d25ec845",
+      "name": "Anup Mazumder",
+      "email": "anup@gmail.com",
+      "password": "anup123",
+      "active": false,
+      "lastmessage": []
+    },
+    {
+      "id": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "name": "Rock Boy",
+      "email": "rock@gmail.com",
+      "password": "rock123",
+      "active": false,
+      "lastmessage": []
+    }
+  ],
   "messages": [
     {
-      "id": "1"
+      "id": 1,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "Hi anup\nHow are you?",
+      "sentat": "4:39 PM"
+    },
+    {
+      "id": 2,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "His rock bro",
+      "sentat": "5:29 PM"
     }
-  ]
+  ],
+  "posts": []
 }

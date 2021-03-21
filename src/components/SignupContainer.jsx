@@ -57,10 +57,10 @@ export default function SignupContainer() {
                         <label htmlFor="passwordAdd">Password</label>
                         <input required type="password" name="password" id="passwordAdd" placeholder="Password" ref={password}/>
                     </div>
-                    <div className="file">
+                    {/* <div className="file">
                         <label htmlFor="fileAdd">Profile Picture</label>
                         <input type="file" name="file" id="fileAdd"/>
-                    </div>
+                    </div> */}
                 </div>
                 <input type="submit" value="Continue to Chat"/>
             </form>

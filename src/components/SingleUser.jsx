@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { setChatRoom } from '../redux/actions'
 
@@ -9,7 +9,6 @@ export default function SingleUser({ data }) {
     let history = useHistory()
     const dispatch = useDispatch()
     const singleChatRoom = () => {
-        // console.log("curr id: ", data.id)
         dispatch(setChatRoom(data))
         history.push("/chat")
     }
@@ -22,7 +21,7 @@ export default function SingleUser({ data }) {
                     </div>
                     <div className="details">
                         <h1>{data.name} <i className={data.active ? "fas fa-circle" : "fas fa-circle red"}></i></h1>
-                        <p className="lastMsg">You: Hello souvik. How are you ?</p>
+                        <p className="lastMsg">{ data.active ? `Active now` : 'Inactive'}</p>
                     </div>
                 </div>
             </div>
