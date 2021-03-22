@@ -10,6 +10,8 @@ import SingleUser from './SingleUser'
 
 export default function Dashboard() {
     const allUsers = useSelector(state=> state.Users)
+    const lastMessages = allUsers.currentuser.lastmessage
+    // console.log("Current user: ", lastMessages)
     let history = useHistory(); const dispatch = useDispatch()
     const logoutHandeler = () =>{
         socket.send(JSON.stringify({
@@ -50,7 +52,7 @@ export default function Dashboard() {
                     {
                         allUsers.allusers.map((value, i) => <>
                             {
-                                value.id !== allUsers.currentuser.id ? <SingleUser data={value} key={i}/> : ''
+                                value.id !== allUsers.currentuser.id ? <SingleUser data={value} key={i} lastMessages={lastMessages}/> : ''
                             }
                         </>)
                     }

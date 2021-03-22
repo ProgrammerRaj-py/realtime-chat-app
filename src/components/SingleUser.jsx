@@ -5,9 +5,10 @@ import { setChatRoom } from '../redux/actions'
 
 import img from '../images/images.jpg'
 
-export default function SingleUser({ data }) {
+export default function SingleUser({ data, lastMessages }) {
     let history = useHistory()
     const dispatch = useDispatch()
+    const msg = lastMessages.find(msg => msg.touser === data.id)
     const singleChatRoom = () => {
         dispatch(setChatRoom(data))
         history.push("/chat")
@@ -21,7 +22,7 @@ export default function SingleUser({ data }) {
                     </div>
                     <div className="details">
                         <h1>{data.name} <i className={data.active ? "fas fa-circle" : "fas fa-circle red"}></i></h1>
-                        <p className="lastMsg">{ data.active ? `Active now` : 'Inactive'}</p>
+                        <p className="lastMsg">{ !msg ? `No messages` : `You: ${msg.content}`}</p>
                     </div>
                 </div>
             </div>

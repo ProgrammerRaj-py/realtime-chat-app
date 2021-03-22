@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { socket } from '../App'
-import { createNewMessage } from '../redux/actions'
+import { createNewMessage, updateLastMessage } from '../redux/actions'
 
 import '../scss/ChatBox.scss'
 import img from '../images/images.jpg'
@@ -11,6 +11,7 @@ export default function ChatBox(){
     const textBox = useRef(); const scrollDiv = useRef(); const dispatch = useDispatch(); const history = useHistory();
     const allMessages = useSelector(state=> state.Messages)
     const allUsers = useSelector(state=> state.Users)
+    const lstMsgs = useSelector(state=> state.Users.currentuser.lastmessage)
 
     const scrollToBottom = () =>{
         scrollDiv.current?.scrollIntoView({ behavior: "smooth" })
@@ -44,12 +45,22 @@ export default function ChatBox(){
             content: textBox.current.value,
             sentat: getDate()
         }
+        dispatch(createNewMessage(msg))
+        dispatch(updateLastMessage({
+            touser: allMessages.chatroomuser.id,
+            content: textBox.current.value
+        }))
         socket.send(JSON.stringify({
             type: 'create',
             path: 'messages',
             data: msg
         }))
-        dispatch(createNewMessage(msg))
+        socket.send(JSON.stringify({
+            type: 'update',
+            path: 'users',
+            id: allUsers.currentuser.id,
+            data: {lastmessage: lstMsgs}
+        }))
         textBox.current.value = ''
 
         // console.log("textBox", msg)

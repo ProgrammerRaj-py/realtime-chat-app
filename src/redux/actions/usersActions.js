@@ -1,4 +1,4 @@
-import { FETCH_ALL_DATA, SET_CURRENT_USER, DELETE_CURRENT_USER, CREATE_NEW_USER } from '../constants'
+import { FETCH_ALL_DATA, SET_CURRENT_USER, DELETE_CURRENT_USER, CREATE_NEW_USER, UPDATE_LAST_MESSAGE } from '../constants'
 
 export const fetchAllData = allUsers => {
     return {
@@ -23,5 +23,12 @@ export const createNewUser = newUser => {
     return {
         type: CREATE_NEW_USER,
         payload: newUser
+    }
+}
+
+export const updateLastMessage = message => {
+    return {
+        type: UPDATE_LAST_MESSAGE,
+        payload: message
     }
 }

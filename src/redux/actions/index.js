@@ -1,2 +1,2 @@
-export { fetchAllData, setCurrentUser, deleteCurrentUser, createNewUser } from './usersActions' 
+export { fetchAllData, setCurrentUser, deleteCurrentUser, createNewUser, updateLastMessage } from './usersActions' 
 export { fetchAllMessages, setChatRoom, createNewMessage } from './messageAction'

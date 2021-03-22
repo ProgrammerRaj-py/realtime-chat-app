@@ -21,7 +21,8 @@ export default function SignupContainer() {
             name: fullname,
             email: email.current.value,
             password: password.current.value,
-            active: true
+            active: true,
+            lastmessage: []
         }
         socket.send(
             JSON.stringify({

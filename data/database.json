@@ -5,11 +5,23 @@
       "name": "Raj Mazumder",
       "email": "raj@gmail.com",
       "password": "raj123",
-      "active": false,
+      "active": true,
       "lastmessage": [
         {
+          "touser": "anup",
+          "content": "omg anup it works"
+        },
+        {
+          "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
+          "content": "hellooooo"
+        },
+        {
           "touser": "243368-7827-b455-83d0-ca5d25ec845",
-          "content": "Hi anup\nHow are you?"
+          "content": "hello"
+        },
+        {
+          "touser": "585f1b-f346-5e4f-7107-c036cd81371f",
+          "content": "hello"
         }
       ]
     },
@@ -19,7 +31,16 @@
       "email": "anup@gmail.com",
       "password": "anup123",
       "active": false,
-      "lastmessage": []
+      "lastmessage": [
+        {
+          "touser": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+          "content": "what about you?"
+        },
+        {
+          "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
+          "content": "hi rock bro"
+        }
+      ]
     },
     {
       "id": "44a3ca-0dcc-734c-b108-5e85456af47",
@@ -27,7 +48,33 @@
       "email": "rock@gmail.com",
       "password": "rock123",
       "active": false,
-      "lastmessage": []
+      "lastmessage": [
+        {
+          "touser": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+          "content": "what's up??"
+        }
+      ]
+    },
+    {
+      "id": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "name": "Rupa Mazumder",
+      "email": "rupa@gmail.com",
+      "password": "rupa123",
+      "active": false,
+      "lastmessage": [
+        {
+          "touser": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+          "content": "it's great\nseriously"
+        },
+        {
+          "touser": "243368-7827-b455-83d0-ca5d25ec845",
+          "content": "hi anup"
+        },
+        {
+          "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
+          "content": "hi rock"
+        }
+      ]
     }
   ],
   "messages": [
@@ -44,6 +91,433 @@
       "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
       "content": "His rock bro",
       "sentat": "5:29 PM"
+    },
+    {
+      "id": 3,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "hii raj",
+      "sentat": "6:21 PM"
+    },
+    {
+      "id": 4,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "hi bro",
+      "sentat": "6:22 PM"
+    },
+    {
+      "id": 5,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "how are you?\n",
+      "sentat": "6:22 PM"
+    },
+    {
+      "id": 6,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "am good\nwhat about you?",
+      "sentat": "6:22 PM"
+    },
+    {
+      "id": 7,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "am also fine\n",
+      "sentat": "6:22 PM"
+    },
+    {
+      "id": 8,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "oh great\n",
+      "sentat": "6:22 PM"
+    },
+    {
+      "id": 9,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "so what are you doing??",
+      "sentat": "6:23 PM"
+    },
+    {
+      "id": 10,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "nothing bro\n",
+      "sentat": "6:23 PM"
+    },
+    {
+      "id": 11,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "what r u dong?",
+      "sentat": "6:25 PM"
+    },
+    {
+      "id": 12,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "nothing just testing that app\n",
+      "sentat": "6:26 PM"
+    },
+    {
+      "id": 13,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "such a nice app u made",
+      "sentat": "6:26 PM"
+    },
+    {
+      "id": 14,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "no bro..\nyou made it",
+      "sentat": "6:26 PM"
+    },
+    {
+      "id": 15,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "yaa.. looks great?",
+      "sentat": "6:27 PM"
+    },
+    {
+      "id": 16,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "yaa awsome",
+      "sentat": "6:27 PM"
+    },
+    {
+      "id": 17,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "fantastic",
+      "sentat": "6:27 PM"
+    },
+    {
+      "id": 18,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "Superb",
+      "sentat": "6:27 PM"
+    },
+    {
+      "id": 19,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "Thanks bro... itna bhi maat tareef maat karo bro..\n",
+      "sentat": "6:28 PM"
+    },
+    {
+      "id": 20,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "na bro tareef toh karna padega hi...kya banya h tumne yaar",
+      "sentat": "6:29 PM"
+    },
+    {
+      "id": 21,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "haaaa.. thanks again and again",
+      "sentat": "6:30 PM"
+    },
+    {
+      "id": 22,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "hii bro",
+      "sentat": "6:32 PM"
+    },
+    {
+      "id": 23,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "how are you bro??",
+      "sentat": "6:33 PM"
+    },
+    {
+      "id": 24,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "fine bro..\nWhat about you?",
+      "sentat": "6:33 PM"
+    },
+    {
+      "id": 25,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "am aslo fine bro",
+      "sentat": "6:33 PM"
+    },
+    {
+      "id": 26,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "great",
+      "sentat": "6:34 PM"
+    },
+    {
+      "id": 27,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "How the app is??",
+      "sentat": "6:34 PM"
+    },
+    {
+      "id": 28,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "its awsome bro\n",
+      "sentat": "6:35 PM"
+    },
+    {
+      "id": 29,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "Practice makes a man perfect bro",
+      "sentat": "6:35 PM"
+    },
+    {
+      "id": 30,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "yaa bro you are right",
+      "sentat": "6:35 PM"
+    },
+    {
+      "id": 31,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "so what is your next project??\n",
+      "sentat": "6:36 PM"
+    },
+    {
+      "id": 32,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "I will think about it bro",
+      "sentat": "6:37 PM"
+    },
+    {
+      "id": 33,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "ok bro\n",
+      "sentat": "6:38 PM"
+    },
+    {
+      "id": 34,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "yaa bro\n",
+      "sentat": "6:38 PM"
+    },
+    {
+      "id": 35,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "at first will make it better",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 36,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "like whatsapp",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 37,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "then i will think about it",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 38,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "ohh great thought bro",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 39,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "best of luck",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 40,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "thanks bro",
+      "sentat": "6:39 PM"
+    },
+    {
+      "id": 41,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "Thats work bro",
+      "sentat": "10:55 AM"
+    },
+    {
+      "id": 42,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "hiii budy",
+      "sentat": "11:16 AM"
+    },
+    {
+      "id": 43,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "hellooooo",
+      "sentat": "11:17 AM"
+    },
+    {
+      "id": 44,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "good morning bro\n",
+      "sentat": "11:20 AM"
+    },
+    {
+      "id": 45,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "good morning raj bro",
+      "sentat": "11:20 AM"
+    },
+    {
+      "id": 46,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "what are you doing?",
+      "sentat": "11:22 AM"
+    },
+    {
+      "id": 47,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "nothing bro just attending classes",
+      "sentat": "11:22 AM"
+    },
+    {
+      "id": 48,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "what about you?",
+      "sentat": "11:22 AM"
+    },
+    {
+      "id": 49,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "buss coding life",
+      "sentat": "11:25 AM"
+    },
+    {
+      "id": 50,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "hi rock bro",
+      "sentat": "11:27 AM"
+    },
+    {
+      "id": 51,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "his buddy",
+      "sentat": "11:28 AM"
+    },
+    {
+      "id": 52,
+      "user_sent": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "what's up??",
+      "sentat": "11:28 AM"
+    },
+    {
+      "id": 53,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "sabcbbcivcivivivcwievciydyvcidyvcyvciiydcyyvcyivwvciyvcie",
+      "sentat": "11:32 AM"
+    },
+    {
+      "id": 54,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "bhag\n",
+      "sentat": "11:32 AM"
+    },
+    {
+      "id": 55,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "hello",
+      "sentat": "11:39 AM"
+    },
+    {
+      "id": 56,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "content": "Welcome Rupa",
+      "sentat": "11:42 AM"
+    },
+    {
+      "id": 57,
+      "user_sent": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "thank you..",
+      "sentat": "11:43 AM"
+    },
+    {
+      "id": 58,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "content": "So what about my project??",
+      "sentat": "11:43 AM"
+    },
+    {
+      "id": 59,
+      "user_sent": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "it's great\nseriously",
+      "sentat": "11:44 AM"
+    },
+    {
+      "id": 60,
+      "user_sent": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "user_received": "243368-7827-b455-83d0-ca5d25ec845",
+      "content": "hi anup",
+      "sentat": "11:46 AM"
+    },
+    {
+      "id": 61,
+      "user_sent": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "hi rock",
+      "sentat": "11:46 AM"
+    },
+    {
+      "id": 62,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "585f1b-f346-5e4f-7107-c036cd81371f",
+      "content": "hello",
+      "sentat": "11:49 AM"
+    },
+    {
+      "id": 63,
+      "user_sent": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
+      "content": "gm. bro",
+      "sentat": "11:50 AM"
     }
   ],
   "posts": []
