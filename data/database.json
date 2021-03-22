@@ -5,15 +5,11 @@
       "name": "Raj Mazumder",
       "email": "raj@gmail.com",
       "password": "raj123",
-      "active": true,
+      "active": false,
       "lastmessage": [
         {
           "touser": "anup",
           "content": "omg anup it works"
-        },
-        {
-          "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
-          "content": "hellooooo"
         },
         {
           "touser": "243368-7827-b455-83d0-ca5d25ec845",
@@ -22,6 +18,10 @@
         {
           "touser": "585f1b-f346-5e4f-7107-c036cd81371f",
           "content": "hello"
+        },
+        {
+          "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
+          "content": "gm. bro"
         }
       ]
     },
