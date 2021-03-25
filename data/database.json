@@ -5,7 +5,7 @@
       "name": "Raj Mazumder",
       "email": "raj@gmail.com",
       "password": "raj123",
-      "active": false,
+      "active": true,
       "lastmessage": [
         {
           "touser": "anup",
@@ -33,12 +33,12 @@
       "active": false,
       "lastmessage": [
         {
-          "touser": "e8532b6-15c6-4a61-b120-20fdc74510d3",
-          "content": "what about you?"
-        },
-        {
           "touser": "44a3ca-0dcc-734c-b108-5e85456af47",
           "content": "hi rock bro"
+        },
+        {
+          "touser": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+          "content": "hello"
         }
       ]
     },
@@ -518,6 +518,13 @@
       "user_received": "44a3ca-0dcc-734c-b108-5e85456af47",
       "content": "gm. bro",
       "sentat": "11:50 AM"
+    },
+    {
+      "id": 64,
+      "user_sent": "243368-7827-b455-83d0-ca5d25ec845",
+      "user_received": "e8532b6-15c6-4a61-b120-20fdc74510d3",
+      "content": "hello",
+      "sentat": "3:7 PM"
     }
   ],
   "posts": []
